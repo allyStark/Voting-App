@@ -1,0 +1,228 @@
+.questiondisplay {
+  margin: 20px 0 20px 0;
+  background-color: #F7DB9C;
+  transition: 0.5s;
+  height: 140px;
+  width: 600px;
+}
+.subtext{
+    font-size: 170%;
+}
+.subsubtext{
+    font-size: 140%;
+}
+.firstbutton{
+    border: 2px solid black;
+    color:black;
+}
+  .firstbutton:hover{
+    background-color: black;
+    color:#B5D9D5;  
+  }
+.questiondisplay:hover {
+  font-size: 150%;
+  height: 180px;
+}
+.questiontext {
+  font-size: 250%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.answertext {
+  font-size: 110%;
+  margin-bottom: 30px;
+}
+.answertext:hover {
+  color: #9C6175;
+}
+.displayrow {
+  border-top: 1px solid black;
+  position: relative;
+  top: -15px;
+}
+.authortext {
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 100;
+  font-size: 120%;
+}
+.info {
+  display: none;
+}
+
+.resultsquestiontext {
+  display: none;
+}
+
+.numberinfo {
+  display: none;
+}
+
+button:onhover {
+  cursor: pointer;
+}
+
+.navitem {
+  margin-right: 50px;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  transition: 0.2s;
+  border: 0px black solid;
+}
+
+.navitem:hover {
+  border: 1px black solid;
+  background-color: #FAFAF2;
+  box-shadow: 5px 5px 5px #888888;
+  transform: scale(1.1, 1.1);
+}
+
+.navbar-brand {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 150%;
+}
+
+body {
+  background-color: #FAFAF2;
+}
+
+.jumbotron {
+  background-color: #B5D9D5;
+}
+
+.navbar {
+  background-color: #B5D9D5;
+  border-bottom: black 5px solid;
+}
+
+.deletebutton {
+  background-color: #D69986;
+  color: #FAFAF2;
+}
+
+.deletebutton:hover {
+  cursor: pointer;
+  border: 1px black solid;
+}
+
+.welcomemessage {
+  font-size: 400%;
+  font-family: 'Poiret One', cursive;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.maintext {
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+}
+
+.maintitle {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.navfloat {
+  margin-left: 59%;
+}
+
+.indexfooter {
+  height: 18%;
+  border-top: 5px black solid;
+  background-color: #D69986;
+  color: black;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 350%;
+}
+.contact {
+  position: relative;
+  top: 35px;
+}
+.ballot {
+  height: 360px;
+}
+
+.welcomerow {
+  border-top: 1px black solid;
+}
+
+.information {
+  font-size: 145%;
+}
+
+.undertext {
+  border-top: 1px solid black;
+  margin-top: 15px;
+}
+
+.innertext {
+  position: relative;
+  top: 30px;
+}
+
+.votemessage {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.bottomrow {
+  border-top: 1px solid black;
+  margin-top: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: #9C6175;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.submitbutton:hover {
+  cursor: pointer;
+  border: 1px black solid;
+}
+
+.createtitle {
+  margin-top: 40px;
+}
+
+.infoimage {
+  margin-top: 35px;
+  height: 100px;
+}
+.infotext {
+  margin-top: 20px;
+}
+.createrow {
+  border-top: 1px solid black;
+}
+@media (max-width: 800px) {
+  .questiondisplay {
+    border: 1px black solid;
+    margin: 20px 0 20px 0;
+    background-color: #F7DB9C;
+    transition: 0.5s;
+    height: auto;
+    width: 600px;
+  }
+  .questiondisplay:hover {
+    font-size: 100%;
+    height: auto;
+  }
+  .questiontext {
+    font-size: 150%;
+  }
+  .navbar-brand {
+    padding-left: 0px;
+  }
+  .navfloat {
+    margin-left: 0;
+  }
+  .ballot {
+    display: none;
+  }
+  .indexfooter {
+    display: none;
+  }
+  .infoimage {
+    display: none;
+  }
+}

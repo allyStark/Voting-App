@@ -1,0 +1,30 @@
+<div class='info' id='info'>{{results}}</div>
+<div class="resultsquestiontext" id="resultsquestion">{{results.question}}</div>
+<div class="numberinfo" id="numberinfo">
+{{#each results.answers}}
+|{{this.number}}
+{{/each}}
+</div>
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <canvas id="myChart" class="chartcanvas"></canvas>
+    </div>    
+</div>
+<script src="/js/chart.js"></script>
+
+<div class="indexfooter fixed-bottom">
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-4 contact">Made by me.</div>
+            <div class="col-8 contact">Contact Me - allystark@hotmail.co.uk</div>
+
+        </div>    
+
+    </div>
+
+</div>
+ 

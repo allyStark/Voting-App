@@ -1,0 +1,19 @@
+{{#each queries}}
+<div class='maintext questiontext'>{{this.question}}</div>
+
+<form method="post" action="/poll/showresults/{{this._id}}">
+    
+        {{#each this.answers}}
+    <div class="form-check">
+  <label class="form-check-label answertext">
+    <input class="form-check-input maintext" type="radio" name="vote" value="{{this.answer}}">
+    {{this.answer}}
+  </label>
+</div>
+    {{/each}}
+<div class="row displayrow">
+</div>
+    <button type="submit" class="btn btn-default submitbutton">Submit</button>
+</form>
+
+{{/each}}

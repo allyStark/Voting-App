@@ -1,0 +1,34 @@
+<h2 class="page-header maintext createtitle">Create A Poll</h2>
+<form method="post" action="/poll/createpoll">
+    <div class="form-group">
+
+        <label class="maintext">Poll Question</label>
+        <input type="text" class="form-control col-8 maintext" placeholder="Ex. How much wood can a woodchuck chuck?" name="question">
+
+    </div>    
+    <div class="form-group">
+        <label class="maintext">Answers</label>
+        <input type="text" class="form-control col-8 maintext" placeholder="Ex. About 7lbs / A woodchuck can't chuck wood. / Really? You're asking that?" name="answers">
+    </div>
+    <button type="submit" class="btn btn-default maintext submitbutton">Create Poll</button>
+</form>
+<br>
+<div>
+    {{#if errors}}
+    {{#each errors}}
+        <div class="alert alert-danger maintext">{{msg}}</div>
+    {{/each}}
+{{/if}}
+</div>
+
+<div class="row createrow">
+
+    <div class="col-2"><img class="infoimage" src="/images/info.svg.png"></div>
+
+    <div class="col-10 maintext infotext">
+        To create your poll, enter your question and your possible answers. <br><br>
+        Seperate each answer with /. You can have as many as you want. <br><br>
+        Example answer: Cheesecake / Cherries / Five fish, each of them called Wanda / Trumpets
+    </div>
+
+</div>    

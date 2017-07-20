@@ -1,0 +1,13 @@
+{{#if queries}}
+    {{#each queries}}
+    <div class="row">
+    <a href="/poll/vote/{{this._id}}" class="questiondisplay col-12 navitem"><span class="questiontext maintext">{{this.question}}</span>
+    <br><br>
+    <span class="authortext">by {{this.author}}</span>
+    </a>
+    </div>
+    {{/each}}
+{{else}}
+    <br>
+    There aren't any polls yet.
+{{/if}}

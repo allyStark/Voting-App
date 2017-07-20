@@ -1,0 +1,86 @@
+<!DOCTYPE html5>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css" /> 
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Poiret+One" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.js"></script>
+</head>
+
+<body>
+
+    {{#if user}}
+
+       <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="navbar-brand">Votemeister 3000</div>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+            <div class="navbar-nav navfloat">
+
+                <a class="nav-item nav-link navitem mr-right" href="/" id="user">{{user.username}}</a>
+                <a class="nav-item nav-link navitem mr-right" href="/poll/mypolls">See My Polls</a>
+                <a class="nav-item nav-link navitem mr-right" href="/poll/polls">See All Polls</a>
+                <a class="nav-item nav-link navitem mr-right" href="/poll/createpoll">Create Poll</a>
+                <a class="nav-item nav-link navitem mr-right" href="/users/logout">Logout</a>
+
+            </div>
+
+        </div>
+
+    </nav>   
+    
+    {{else}}
+    <div class="jumbotron">
+        <h1 class="display-3"><span class="maintext">Welcome to</span> <span class="maintitle">Votemeister 3000</span></h1>
+
+        <p class="lead maintext subtext">The internet's number 1* voting application! Login to continue.</p>
+        <hr class="my-4">
+        <p class="maintext subsubtext">Not a member? Register now! It's free and frankly it will change your life.</p>
+        <p class="lead">
+
+            <a class="btn btn-default btn-lg firstbutton" href="/users/login" role="button">Login</a>
+            <a class="btn btn-default btn-lg firstbutton" href="/users/register" role="button">Register</a>
+            
+        </p>
+      
+    </div>
+    {{/if}}
+    
+
+
+<div class="container">
+
+    <div class="col-lg-12">
+
+        {{#if success_msg}}
+            <div class="alert alert-success maintext">{{success_msg}}</div>
+        {{/if}}
+        {{#if error_msg}}
+            <div class="alert alert-danger maintext">{{error_msg}}</div>
+        {{/if}}
+        {{#if error}}
+            <div class="alert alert-danger maintext">{{error}}</div>
+        {{/if}}
+            
+        {{{body}}}
+    </div>    
+
+</div>   
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+</body>        
+
+</html>

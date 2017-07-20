@@ -1,0 +1,18 @@
+{{#if queries}}
+        {{#each queries}}
+    <div class="row">
+    <a href="/poll/vote/{{this._id}}" class="questiondisplay col-12 navitem"><span class="questiontext maintext">{{this.question}}</span>
+    <br><br>
+    <span class="authortext">by {{this.author}}</span>
+    </a>
+    </div>
+    <div class="row">
+        <form method="post" action="/poll/deletepoll/{{this._id}}">
+            <button type="submit" class="btn deletebutton maintext">Delete Poll</button>
+        </form>
+    </div>
+    {{/each}}
+{{else}}
+    <br>
+    You don't have any polls yet.
+{{/if}}
