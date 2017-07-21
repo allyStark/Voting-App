@@ -74,8 +74,10 @@ app.use('/', poll);
 app.use('/users', users);
 app.use('/poll', poll);
 //connect to mongod
-mongoose.connect('mongodb://localhost/LoginTest');
-
+//for heroku
+//mongoose.connect(process.env.MONGODB_URI);
+//local
+mongoose.connect('mongodb://localhost/VotingApp');
 //console.log(res.locals);
 
 app.listen(process.env.PORT || 3000, function(){

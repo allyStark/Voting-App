@@ -49,6 +49,9 @@
   display: none;
 }
 
+.tinytext{
+  font-size: 90%;
+}
 .resultsquestiontext {
   display: none;
 }

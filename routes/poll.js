@@ -89,8 +89,8 @@ router.post('/createpoll', function(req, res){
             if(err){ 
                 throw err;
             } else {
-                console.log('saved');
-                res.redirect('/')
+                req.flash("success_msg", "Your poll has been created!");
+                res.redirect('/createpoll');
             }
         });
     }
